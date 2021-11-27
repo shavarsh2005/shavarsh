@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodingLab</title>
+    <link rel="stylesheet" href="style.css">
+    <!--    Boxicons CDN Link-->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+
+<!--sidebar-->
+
+
+<div class="sidebar">
+    <div class="logo_content">
+        <div class="logo">
+            <i class='bx bxl-html5'></i>
+            <div class="logo_name">CodingLab</div>
+        </div>
+        <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav_list">
+        <li>
+
+            <i class='bx bx-search-alt-2'></i>
+            <input type="text" placeholder="Search...">
+
+            <span class="tooltip">Search</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-grid-alt'></i>
+                <span class="links_name">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-user'></i>
+                <span class="links_name">User</span>
+            </a>
+            <span class="tooltip">User</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-chat'></i>
+                <span class="links_name">Messages</span>
+            </a>
+            <span class="tooltip">Messages</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-pie-chart-alt-2'></i>
+                <span class="links_name">Analytics</span>
+            </a>
+            <span class="tooltip">Analytics</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-folder'></i>
+                <span class="links_name">File Manager</span>
+            </a>
+            <span class="tooltip">Files</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-cart'></i>
+                <span class="links_name">Order</span>
+            </a>
+            <span class="tooltip">Order</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-heart'></i>
+                <span class="links_name">Saved</span>
+            </a>
+            <span class="tooltip">Saved</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-cog'></i>
+                <span class="links_name">Setting</span>
+            </a>
+            <span class="tooltip">Setting</span>
+        </li>
+    </ul>
+    <div class="profile_content">
+        <div class="profile">
+            <div class="profile_details">
+                <img src="image.jpg" alt="">
+                <div class="name_job">
+                    <div class="name">Shavarsh</div>
+                    <div class="job">Web Developer</div>
+                </div>
+            </div>
+            <i class='bx bx-log-out' id="log_out"></i>
+        </div>
+    </div>
+</div>
+<div class="home_content">
+    <div class="text">Home Content</div>
+</div>
+
+<script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+    let searchBtn = document.querySelector(".bx-search-alt-2");
+
+    btn.onclick = function () {
+        sidebar.classList.toggle("active")
+    }
+    searchBtn.onclick = function () {
+        sidebar.classList.toggle("active")
+    }
+</script>
+
+
+<!--sidebar-->
+
+
+<!--login parol-->
+
+<!--<div class="login-wrapper">-->
+<!--    <form action="" class="form">-->
+<!--        <i class='bx bxs-user-circle' ></i>-->
+<!--        <h2>Login</h2>-->
+<!--        <div class="input-group">-->
+<!--            <input type="text" name="loginUser" id="loginUser" required>-->
+<!--            <label for="loginUser">User Name</label>-->
+<!--        </div>-->
+<!--        <div class="input-group">-->
+<!--            <input type="password" name="loginPassword" id="loginPassword" required>-->
+<!--            <label for="loginPassword">Password</label>-->
+<!--        </div>-->
+<!--        <input type="submit" value="Login" class="submit-btn">-->
+<!--        <a href="#forgot-pw" class="forgot-pw">Forgot Password?</a>-->
+<!--    </form>-->
+
+<!--    <div id="forgot-pw">-->
+<!--        <form action="" class="form">-->
+<!--            <a href="#" class="close">&times;</a>-->
+<!--            <h2>Reset Password</h2>-->
+<!--            <div class="input-group">-->
+<!--                <input type="email" name="email" id="email" required>-->
+<!--                <label for="email">Email</label>-->
+<!--            </div>-->
+<!--            <input type="submit" value="Submit" class="submit-btn">-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--login parol-->
+
+
+
+
+
+
+<!--website create-->
+
+<!--<div class="banner">-->
+<!--    <div class="navbar">-->
+<!--        <img src="logo.jpg" class="logo">-->
+<!--        <ul>-->
+<!--            <li><a href="#">Home</a></li>-->
+<!--            <li><a href="#">Bedroom</a></li>-->
+<!--            <li><a href="#">Dining</a></li>-->
+<!--            <li><a href="#">Kitchen</a></li>-->
+<!--            <li><a href="#">Backyard</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--    <div class="content">-->
+<!--        <h1>DESIGN YOUR HOUSE</h1>-->
+<!--        <p>Subscribe Easy Tutorials Youtube Channel to watch more-->
+<!--            videos, <br>press-->
+<!--            s the bell icon to get latest updates.</p>-->
+<!--        <div>-->
+<!--            <button type="button"><span></span>WATCH MORE</button>-->
+<!--            <button type="button"><span></span>SUBSCRIBE</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--website create-->
+
+
+
+<!--password input-->
+<!--<div class="container">-->
+<!--    <div class="input-box">-->
+<!--        <i class='bx bxs-low-vision show_hide' ></i>-->
+<!--        <input type="password" placeholder="Enter password">-->
+<!--    </div>-->
+<!--    <div class="indicator">-->
+<!--        <div class="icon-text">-->
+<!--            <i class='bx bxs-info-circle error_icon' ></i>-->
+<!--            <h6 class="text"></h6>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<!--<script src="script.js"></script>-->
+<!--password input-->
+
+
+
+</body>
+</html>
